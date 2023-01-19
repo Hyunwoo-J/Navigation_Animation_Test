@@ -20,6 +20,7 @@
 		2C529A4C2976E5E700412F91 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 2C529A4B2976E5E700412F91 /* RxRelay */; };
 		2C529A4E2976E5E700412F91 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2C529A4D2976E5E700412F91 /* RxSwift */; };
 		2C529A512976E67E00412F91 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C529A502976E67E00412F91 /* Animator.swift */; };
+		D25F5B742978E5D700984E57 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F5B732978E5D700984E57 /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2C529A382976E30500412F91 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		2C529A432976E50300412F91 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2C529A502976E67E00412F91 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		D25F5B732978E5D700984E57 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		2C529A232976E28300412F91 /* NavigationAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				D25F5B722978E5C200984E57 /* BaseNavigationController */,
 				2C529A4F2976E67300412F91 /* Animator */,
 				2C529A242976E28300412F91 /* AppDelegate.swift */,
 				2C529A262976E28300412F91 /* SceneDelegate.swift */,
@@ -88,6 +91,14 @@
 				2C529A502976E67E00412F91 /* Animator.swift */,
 			);
 			path = Animator;
+			sourceTree = "<group>";
+		};
+		D25F5B722978E5C200984E57 /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D25F5B732978E5D700984E57 /* BaseNavigationController.swift */,
+			);
+			path = BaseNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C529A512976E67E00412F91 /* Animator.swift in Sources */,
+				D25F5B742978E5D700984E57 /* BaseNavigationController.swift in Sources */,
 				2C529A252976E28300412F91 /* AppDelegate.swift in Sources */,
 				2C529A272976E28300412F91 /* SceneDelegate.swift in Sources */,
 				2C529A392976E30500412F91 /* MasterViewController.swift in Sources */,

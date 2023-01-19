@@ -17,15 +17,12 @@ class MasterViewController: UIViewController {
   
   private let disposeBag: DisposeBag = .init()
   
-  private let transition = Animator()
-  
   override func loadView() {
     self.view = self.contentView
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.navigationController?.delegate = self
     self.bind()
   }
   
@@ -43,7 +40,6 @@ class MasterViewController: UIViewController {
       .disposed(by: self.disposeBag)
   }
 }
-
 
 extension MasterViewController {
   public class ContentView: UIView {
@@ -76,16 +72,3 @@ extension MasterViewController {
 }
 
 
-extension MasterViewController: UINavigationControllerDelegate {
-  
-  func navigationController(_
-    navigationController: UINavigationController,
-    animationControllerFor
-    operation: UINavigationController.Operation,
-    from fromVC: UIViewController,
-    to toVC: UIViewController) ->
-    UIViewControllerAnimatedTransitioning? {
-    transition.operation = operation
-    return transition
-  }
-}
